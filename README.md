@@ -15,3 +15,9 @@ nav: whit 4 <a> (home, singup, login and contact)
 ```
 aside: whit a menu and "Get in touch" section
 ```
+```
+sections for: home, functions, assests, forms, abouts us, products, company and support
+```
+```
+footer: whit location info, Copyright and social media icons
+````
