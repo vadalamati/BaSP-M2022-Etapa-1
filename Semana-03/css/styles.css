@@ -21,6 +21,11 @@ aside {
     background-color:#EDEDED;
 }
 
+.subtitle {
+    font-weight: bold;
+
+}
+
 .btn-more {
     background-color: #AACE9B;
     color: #000;
