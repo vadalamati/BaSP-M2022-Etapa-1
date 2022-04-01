@@ -1,3 +1,13 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 400, regular;
+    font-size: 50px;
+
+}
 .btn-more {
     background-color: #AACE9B;
     color: #000;
@@ -5,7 +15,6 @@
     border: none;
     border-radius: 5px;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     font-weight: 500;
     box-shadow: 2.5px 5px 4px #c4c4c4;
