@@ -1,0 +1,13 @@
+.btn-more {
+    background-color: #AACE9B;
+    color: #000;
+    padding: 8px 30px 8px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    box-shadow: 2.5px 5px 4px #c4c4c4;
+    
+}
