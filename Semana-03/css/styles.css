@@ -2,12 +2,25 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+header {
+    background-color:#AACE9B;
+    margin-top: 0px;
+}
+
 h1 {
     text-transform: uppercase;
     font-weight: 400, regular;
     font-size: 50px;
 
 }
+
+aside {
+    width: 308px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color:#EDEDED;
+}
+
 .btn-more {
     background-color: #AACE9B;
     color: #000;
