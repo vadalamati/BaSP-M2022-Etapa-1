@@ -1,32 +1,84 @@
 body {
-     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande','Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Roboto', sans-serif;
 }
 
 header {
-    background-color:#AACE9B;
-    margin-top: 0px;
+   background-color:#AACE9B;
+   height: 450;
 }
 
 h1 {
-    text-transform: uppercase;
-    font-weight: 400, regular;
-    font-size: 50px;
-
+   font-family: 'righteous';
+   text-transform: uppercase;
+   font-weight: 400, regular;
+   font-size: 50px;
+   text-align: center;
+   padding-right: 750px;
 }
 
-aside {
-    width: 308px;
-    margin-left: 0px;
-    margin-top: 0px;
-    background-color:#EDEDED;
+.menu nav {
+    float: right;
+}
+
+.menu nav ul li {
+    list-style: none;
+    margin-left: 75px;
+    float: left;
+    margin-bottom: 500px;
+    padding: 25px  ;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: #000;
+
 }
 
 .subtitle {
-    font-weight: bold;
+   font-weight: bold;
 
 }
 
-.btn-more {
+article {
+    display: inline-block;
+    width: 40%;
+    padding: 50px;
+}
+
+.main-section {
+    background-image:url('/assets/png/Frame-5.png');
+    background-size: cover;
+}
+
+form .input-a {
+    width:550px;
+    height: 20px;
+    margin: 10px;
+    border-radius: 4px;
+    padding: 10px, 12px;
+
+}
+
+form select {
+    width: 1140px;
+    height: 20px;
+    margin: 10px;
+    border-radius: 4px;
+    padding: 10px, 12px;
+}
+
+form textarea {
+    width: 1140px;
+    height: 210px;
+    margin: 10px;
+    border-radius: 4px;
+
+}
+
+form .btn-section {
+    padding: 5px;
+}
+.btn-green {
     background-color: #AACE9B;
     color: #000;
     padding: 8px 30px 8px 30px;
@@ -36,5 +88,17 @@ aside {
     text-transform: uppercase;
     font-weight: 500;
     box-shadow: 2.5px 5px 4px #c4c4c4;
-    
 }
+
+ .btn-white {
+    background-color: #FFF;
+    color: #000;
+    padding: 8px 30px 8px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    box-shadow: 2.5px 5px 4px #c4c4c4;
+}
+

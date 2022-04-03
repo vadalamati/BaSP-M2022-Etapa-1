@@ -5,20 +5,31 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Problemática Semanal #3</title>
+        <link rel="stylesheet" href= "css/reset.css">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;500;700&display=swap" 
+        rel="stylesheet">
     </head>
     <body>
         <header>
-            <h1> < Trackgenix > </h1>  
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Sing Up</a>
-                <a href="#">Log in</a>
-                <a href="#">Contact</a>
-            </nav>    
+            <div class="menu">
+                <img src="assets/svg/menu.svg" alt="logoImg">
+                <h1> < Trackgenix > </h1>  
+                <nav>
+                    <ul>
+                        <li><a class="menu-item"href="#">Home</a></li>
+                        <li><a class="menu-item"href="#">Sing Up</a></li>
+                        <li><a class="menu-item"href="#">Log in</a></li>
+                        <li><a class="menu-item"href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <aside>
-                <input type="text" name="searchBar" placeholder="Search">
+            <input type="text" name="searchBar" placeholder="Search">
             <nav>
                 <p class="subtitle">Menu</p>
                 <ul>
@@ -46,20 +57,21 @@
                      TN 00000-0000</p>
                 </div>
         </aside>
-                <section>
+        <main>
+            <section>
+                <div class="main-section">
                 <h2>The future of Remote Work</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maxime ab nisi dignissimos pariatur 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maxime ab nisi dignissimos pariatur
                     reprehenderit tempora hic, laboriosam tempore officiis eos dolorem ea? Quidem, commodi dolores 
                     eligendi similique earum repudiandae est nostrum dolore sit ab! Reprehenderit, est minima. 
                 </p>
-                <img src="assets/png/Frame-5.png" alt="background">
+                </div>
                 <a href=#>Learn More </a>
-                </section>
-        <main>
+            </section>
             <section>
                 <h2>Functions</h2>
-                <div>
+                <article>
                     <img src="assets/svg/Frame-1.svg" alt="clockIcon">
                     <h3>TimeKeeping</h3>
                     <p>
@@ -67,8 +79,8 @@
                     reprehenderit tempora hic, laboriosam tempore officiis eos dolorem ea? Quidem, commodi dolores
                     eligendi similique earum repudiandae est nostrum dolore sit ab! Reprehenderit, est minima.
                 </p>
-                </div>
-                <div>
+                </article>
+                <article>
                     <img src="assets/svg/Frame.svg" alt="reportsIcon">
                     <h3>Reports</h3>
                     <p>
@@ -76,8 +88,8 @@
                         reprehenderit tempora hic, laboriosam tempore officiis eos dolorem ea? Quidem, commodi dolores
                         eligendi similique earum repudiandae est nostrum dolore sit ab! Reprehenderit, est minima.
                     </p>
-                </div>
-                <div>
+                </article>
+                <article>
                     <img src="assets/svg/Frame-2.svg" alt="peopleIcon">
                     <h3>Resource management</h3>
                     <p>
@@ -85,8 +97,8 @@
                         reprehenderit tempora hic, laboriosam tempore officiis eos dolorem ea? Quidem, commodi dolores
                         eligendi similique earum repudiandae est nostrum dolore sit ab! Reprehenderit, est minima.
                     </p>
-                </div>
-                <div>
+                </article>
+                <article>
                 <img src="assets/svg/Frame-3.svg" alt="timeIcon">
                     <h3>Multiple roles</h3>
                     <p>
@@ -94,57 +106,53 @@
                         reprehenderit tempora hic, laboriosam tempore officiis eos dolorem ea? Quidem, commodi dolores
                         eligendi similique earum repudiandae est nostrum dolore sit ab! Reprehenderit, est minima.
                     </p> 
-                </div>
+                </article>
             </section>
             <section>
                 <h2>Assets</h2>
-                <div>
-                    <h3>Traceability</h3>
+                <article>
                     <img src="assets/svg/Rectangle-2309.svg" alt="imgTrack">
+                    <h3>Traceability</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe est harum expedita in hic
                         aliquid cupiditate sed nostrum?
                     </p>
-                    <a href="#" class="btn-more">More</a>
+                    <a href="#" class="btn-green">More</a>
                     
-                </div>
-                <div>
-                    <h3>Decision making</h3>
+                </article>
+                <article>
                     <img src="assets/svg/Frame-9.svg" alt="imgDes">
+                    <h3>Decision making</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe est harum expedita in hic
                         aliquid cupiditate sed nostrum?
                     </p>
-                    <a href="#" class="btn-more">More</a>
-                </div>
-                <div>
-                    <h3>Equipment management</h3>
+                    <a href="#" class="btn-green">More</a>
+                </article>
+                <article>
                     <img src="assets/svg/Rectangle-2310.svg" alt="imgDes">
+                    <h3>Equipment management</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe est harum expedita in hic
                         aliquid cupiditate sed nostrum?
                     </p>
-                    <a href="#" class="btn-more">More</a>
-                </div>
-                <div>
-                    <h3>Efficiency</h3>
+                    <a href="#" class="btn-green">More</a>
+                </article>
+                <article>
                     <img src="assets/svg/Frame-8.svg" alt="imgEff">
+                    <h3>Efficiency</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe est harum expedita in hic
                         aliquid cupiditate sed nostrum?
                     </p>
-                    <a href="#" class="btn-more">More</a>
-                </div>
+                    <a href="#" class="btn-green">More</a>
+                </article>
             </section>
             <section>
                 <h2>Form</h2>
                     <form>
-                        <div>
-                            <input type="text" name="userName" placeholder="Name">
-                        </div>
-                        <div>
-                            <input type="email" name="userEmail" placeholder="Email">
-                        </div>
+                            <input type="text" name="userName" placeholder="Name" class="input-a">
+                            <input type="email" name="userEmail" placeholder="Email" class="input-a">
                         <div>
                             <select name="sector" id="Category">
                                 <option value="rrhh">Category</option>
@@ -153,10 +161,11 @@
                                 <option value="commercialization">Dolor</option>
                             </select>
                         </div>
-                        <div>
                             <textarea name="message" id="" cols="30" rows="10"></textarea>
+                        <div class="btn-section">
+                        <input type="submit" name="submit" value="Send Message" class="btn-green">
+                        <input type="reset" name="reset" value="Reset" class="btn-white">
                         </div>
-                        <input type="submit" name="submit" value="Send Message">      <input type="reset" name="reset" value="Reset">
                     </form>
             </section>
                 <h2>About Us</h2>
