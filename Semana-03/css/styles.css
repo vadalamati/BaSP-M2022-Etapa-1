@@ -46,8 +46,35 @@ article {
 }
 
 .main-section {
-    background-image:url('/assets/png/Frame-5.png');
+    background-image:url('../assets/png/main-section.png');
     background-size: cover;
+    height:900px;
+    width: 100%;
+}
+
+.main-section h2 {
+    width: 450px;
+    height: 196px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 53px;
+    line-height: 74px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+.main-section p {
+    width: 550px;
+    height: 550px;
+    padding: 25px;
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    text-align: left;
+
 }
 
 form .input-a {
@@ -100,5 +127,24 @@ form .btn-section {
     text-transform: uppercase;
     font-weight: 500;
     box-shadow: 2.5px 5px 4px #c4c4c4;
+}
+
+.about-us article{
+    display: inline-block;
+    width: 35%;
+}
+
+.about-us article p {
+    text-align: left;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1.8;
+}
+
+footer {
+    background-image: url(../assets/png/Frame-4.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
