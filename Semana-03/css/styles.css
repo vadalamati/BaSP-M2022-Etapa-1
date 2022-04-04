@@ -164,10 +164,26 @@ h2 {
 
 article {
     display: inline-block;
-    width: 40%;
+    width: 30%;
     padding: 50px;
 }
 
+article .report-icon{
+    background-image: url('../assets/svg/Frame-1.svg');
+}
+
+article h3 {
+    margin:25px;
+    margin-left: 0;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 72px;
+    text-align: left;
+}
+
+article p {
+    margin: 25px;
+}
 .main-section {
     background-image:url('../assets/png/main-section.png');
     background-repeat: no-repeat;
@@ -200,6 +216,16 @@ article {
     letter-spacing: 0.05em;
     text-align: left;
 
+}
+.btn-lm {
+        margin: 50px;
+        background-color: #FFF;
+        color: #000;
+        padding: 8px 30px 8px 30px;
+        border: 6px solid #AACE9B;
+        border-radius: 20px;
+        text-decoration: none;
+        text-transform: uppercase;
 }
 
 form .input-a {
