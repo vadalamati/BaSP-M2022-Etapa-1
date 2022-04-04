@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Problemática Semanal #3</title>
+        <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,47 +15,51 @@
     </head>
     <body>
         <header>
-            <div class="menu">
-                <img src="assets/svg/menu.svg" alt="logoImg">
-                <h1> < Trackgenix > </h1>  
-                <nav>
-                    <ul>
-                        <li><a class="menu-item"href="#">Home</a></li>
-                        <li><a class="menu-item"href="#">Sing Up</a></li>
-                        <li><a class="menu-item"href="#">Log in</a></li>
-                        <li><a class="menu-item"href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <aside>
-            <input type="text" name="searchBar" placeholder="Search">
+            <h1>Trackgenix</h1>  
             <nav>
-                <p class="subtitle">Menu</p>
                 <ul>
-                    <li><a href="#">HOMEPAGE</a></li>
-                    <li><a href="#">GENERIC</a></li>
-                    <li><a href="#">SUBMENU</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sing Up</a></li>
+                    <li><a href="#">Log in</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-                <div>
-                    <p class="subtitle">Get in Touch </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maxime ab nisi dignissimos pariatur 
-                        reprehenderit tempora hic, laboriosam tempore officiis eos dolorem ea? Quidem, commodi dolores 
-                        eligendi similique earum repudiandae est nostrum dolore sit ab! Reprehenderit, est minima.
-                    </p>
-                </div>
-                <div>
-                    <img src="assets/svg/bxs-envelope 1.svg" alt="emailIcon"><p>information@untitled.tld</p>
-                </div>
-                <div>
-                    <img src="assets/svg/bxs-phone 1.svg" alt="phoneIcon"><p>(000) 0000 00000</p>
-                </div>
-                <div>
-                    <img src="assets/svg/bxs-phone 1.svg" alt="homeIcon"><p>1234 Somewhere Road #8254 Nashville,
-                     TN 00000-0000</p>
-                </div>
+        </header>
+        <aside>
+            <form class="topnav">
+                <input type="text" placeholder="search">
+                <img src="" alt="lupa-img">
+            </form>
+            <div>
+                <p class="menu">
+                    Menu
+                </p>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#">Homepage</a></li>
+                    <li><a href="#">Generic</a></li>
+                    <li><a href="#">Submenu</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="get-in">
+                    Get in touch
+                </p>
+            </div>
+            <div>
+                <p class="text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, qui deleniti nobis odio accusamus
+                    assumenda quae aperiam quod ratione ex quos atque minus doloribus provident facere nulla quisquam dolor impedi?
+                </p>
+            </div>
+            <div>
+                <ul class="ul-img">
+                    <li><img src="assets/svg/bxs-envelope-1.svg" alt="emailIcon">info@untitled.tld</li>
+                    <li><img src="assets/svg/bxs-phone-1.svg" alt="phoneIcon">>(000) 0000 00000</li>
+                    <li><img src="assets/svg/bxs-home-1.svg" alt="homeIcon">1234 Somewhere Road #8254 Nashville, TN 00000-0000</li>
+                </ul>
+            </div>
         </aside>
         <main>
             <section>
@@ -178,32 +183,32 @@
                     <img src="assets/svg/Frame-12.svg" alt="about-img" id="about-img">
                 </article>
             </section>
-            <section>
-                <div class="order-list">
-                    <h3>Products</h3>
-                    <ol>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Downloads</a></li>
-                        <li><a href="#">Integrations</a></li>
-                        <li><a href="#">Extras</a></li>
-                    </ol>
-                </div class="order-list">
+            <section id="order-list">
                 <div>
-                    <h3>Company</h3>
+                    <div>Products:</div>
                     <ol>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Customers</a></li>
-                        <li><a href="#">Resources</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="#homepage">Features</a></li>
+                        <li><a href="#homepage">Downloads</a></li>
+                        <li><a href="#homepage">Integrations</a></li>
+                        <li><a href="#homepage">Addiotional features</a></li>
                     </ol>
                 </div>
-                <div class="order-list">
-                    <h3>Support</h3>
+                <div>
+                    <div>Business:</div>
                     <ol>
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Tutorials</a></li>
-                        <li><a href="#">API</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#homepage">Customers</a></li>
+                        <li><a href="#homepage">Resources</a></li>
+                        <li><a href="#homepage">Blog</a></li>
+                    </ol>
+                </div>
+                <div>
+                    <div>Support:</div>
+                    <ol>
+                        <li><a href="#homepage">Help</a></li>
+                        <li><a href="#homepage">Tutorials</a></li>
+                        <li><a href="#homepage">API</a></li>
+                        <li><a href="#contact-us">Contact</a></li>
                     </ol>
                 </div>
             </section>
