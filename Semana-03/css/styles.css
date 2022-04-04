@@ -6,6 +6,7 @@ body > main {
     background-color: #ffffff;
     width: 80%;
     margin-left: 20%;
+    z-index: 2;
 }
 
 
@@ -18,12 +19,14 @@ header {
 }
 
 header h1 {
-   padding-left: 330px;
-   padding-top: 10px;
-   font-family: 'righteous' cursive;
-   text-transform: uppercase;
-   font-size: 52px;
-   color: #000;
+    display: inline-block;
+    padding-left: 555px;
+    padding-top: 10px;
+    margin-top: 15px;
+    font-family: 'righteous';
+    text-transform: uppercase;
+    font-size: 52px;
+    color: #000;
 }
 
 header nav {
@@ -46,13 +49,14 @@ header nav ul li a {
 
 
 aside {
-    position: absolute;
+    position: fixed;
     display: inline-block;
     width: 20%;
-    height: 5892px;
+    height: 100%;
     top: 0;
     left: 0;
     background-color: #ededed;
+    z-index: 1;
 }
 aside form {
     position: relative;
@@ -155,13 +159,24 @@ aside ul li a {
 }
 
 h2 {
+    width: 209px;
     margin:50px;
+    text-align: center;
     font-size: 42px;
     font-weight: 500;
     border-bottom: 6px solid #AACE9B;
     line-height: 72px;
 }
 
+article. img{
+    display: inline-block;
+    width: 20;
+
+}
+
+article {
+    80
+}
 article {
     display: inline-block;
     width: 30%;
@@ -170,6 +185,7 @@ article {
 
 article .report-icon{
     background-image: url('../assets/svg/Frame-1.svg');
+    width: 100%;
 }
 
 article h3 {
@@ -218,14 +234,21 @@ article p {
 
 }
 .btn-lm {
-        margin: 50px;
-        background-color: #FFF;
-        color: #000;
-        padding: 8px 30px 8px 30px;
-        border: 6px solid #AACE9B;
-        border-radius: 20px;
-        text-decoration: none;
-        text-transform: uppercase;
+    margin: 150px;
+    background-color: #FFF;
+    color: #000;
+    padding: 8px 45px 8px 45px;
+    border: 6px solid #AACE9B;
+    border-radius: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+.assets p {
+    margin: 0;
+    padding-bottom: 50px;
+    text-align: left;
 }
 
 form .input-a {
@@ -259,24 +282,25 @@ form .btn-section {
 .btn-green {
     background-color: #AACE9B;
     color: #000;
-    padding: 8px 30px 8px 30px;
+    padding: 8px 36px 8px 36px;
     border: none;
     border-radius: 5px;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: bold;
     box-shadow: 2.5px 5px 4px #c4c4c4;
 }
 
  .btn-white {
+    margin-left: 20px; 
     background-color: #FFF;
     color: #000;
     padding: 8px 30px 8px 30px;
-    border: none;
     border-radius: 5px;
+    border: 2px solid #AACE9B;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: bold;
     box-shadow: 2.5px 5px 4px #c4c4c4;
 }
 
@@ -292,19 +316,33 @@ form .btn-section {
     line-height: 1.8;
 }
 
+.order-list {
+    display: inline-block;
+    width: 33%;
+    padding-bottom: ;
+    text-align: center;
+}
+
+.order-list ol {
+    list-style: decimal;
+    margin-left: 250px;
+}
+.order-list ol li {
+
+}
+
+.order-list ol li a{
+    text-decoration: none;
+    color: #000;
+}
 
 footer {
     background-image: url(../assets/png/Frame-4.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    height: 450px;
+    z-index: 3;
 }
 
 
-.order-list {
-    display: inline-block;
-    width: 33%;
-    padding-bottom: 5%;
-    text-align: center;
-    list-style-type: decimal;
-}
