@@ -6,7 +6,6 @@ body > main {
     background-color: #ffffff;
     width: 80%;
     margin-left: 20%;
-    z-index: 2;
 }
 
 
@@ -56,7 +55,6 @@ aside {
     top: 0;
     left: 0;
     background-color: #ededed;
-    z-index: 1;
 }
 aside form {
     position: relative;
@@ -323,17 +321,30 @@ form .btn-section {
     text-align: center;
 }
 
-.order-list ol {
-    list-style: decimal;
-    margin-left: 250px;
+.order-list .title-list{
+    display: inline-block;
+    padding: 10px;
+    font-size: 33px;
+    font-weight: 500;
+    width: 209px;
+    border-bottom: 6px solid #AACE9B;
 }
-.order-list ol li {
 
+.order-list ol {
+    display: inline-block;
+    list-style: decimal;
+    padding: 25px 75px;
+    font-size: 33px;
 }
+
 
 .order-list ol li a{
+    display: inline-block;
     text-decoration: none;
     color: #000;
+    font-size: 33px;
+    font-weight: 300;
+    padding: 10px;
 }
 
 footer {
@@ -342,7 +353,22 @@ footer {
     background-position: center center;
     background-size: cover;
     height: 450px;
-    z-index: 3;
 }
 
+footer .foot {
+    display: inline-block;
+    padding: 150px;
+    padding-top: 250;
+    margin-left: 450px;
 
+}
+
+footer .foot a {
+    padding-right: 80px;
+}
+
+footer .foot p {
+    text-align: center;
+    color: #ededed;
+    font-size: 30px;
+}
