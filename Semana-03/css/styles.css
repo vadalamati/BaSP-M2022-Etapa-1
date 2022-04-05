@@ -10,18 +10,23 @@ body > main {
 
 
 header {
-   position: relative;
-   height: 111px;
-   width : 100%;
-   top: 0;
-   background-color: #AACE9B;
-}
+    position: relative;
+    height: 111px;
+    width : 100%;
+    top: 0;
+    background-color: #AACE9B;
+ }
 
+header img {
+    display: inline-block;
+    padding-left: 30px;
+    margin-left: 20%;
+}
 header h1 {
     display: inline-block;
-    padding-left: 555px;
-    padding-top: 10px;
-    margin-top: 15px;
+    padding-left: 50px;
+    padding-top: 12px;
+    text-align: center;
     font-family: 'righteous';
     text-transform: uppercase;
     font-size: 52px;
@@ -32,6 +37,7 @@ header nav {
     position: absolute;
     top: 25px;
     right: 10px;
+    padding: 10px;
 }
 header nav ul li {
     display:inline-block;
@@ -56,15 +62,12 @@ aside {
     left: 0;
     background-color: #ededed;
 }
-aside form {
-    position: relative;
-    border: 2px solid #c4c4c4;
-    height: 111px;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: #c4c4c4;
-}
+
 aside input{
+    background-image: url('../assets/png/Search.png');
+    background-repeat: no-repeat;
+    background-position: 95%;
+    width: 65%;
     margin-top: 41px;
     margin-left: 10px;
     margin-right: 10px;
@@ -74,6 +77,15 @@ aside input{
     border-radius: 5px;
     border-width: 1px;
 }
+aside form {
+    position: relative;
+    border: 2px solid #c4c4c4;
+    height: 111px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #c4c4c4;
+}
+
 aside form img {
     position: absolute;
     left: 265px;
@@ -156,6 +168,11 @@ aside ul li a {
     float: left;
 }
 
+.about-us, .functions-1, .main-section, .assets, .form-sec {
+    padding-bottom: 100px;
+    border-bottom: 3px solid #c4c4c4;
+}
+
 h2 {
     width: 209px;
     margin:50px;
@@ -166,19 +183,52 @@ h2 {
     line-height: 72px;
 }
 
-article. img{
+.functions-1{
+    margin-left: 90px;
+    padding-bottom: 100px;
+}
+
+.functions {
     display: inline-block;
-    width: 20;
-
+    width: 45%;
+    margin: 30 0;
 }
 
-article {
-    80
+.functions h3 {
+    margin:25px;
+    margin-left: 0;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 72px;
+    text-align: left;
 }
+
+.functions div {
+    position: relative;
+    display: inline-block;
+}
+
+.functions img {
+    display: inline-block;
+    padding: 20px;
+}
+
+.functions p {
+    width: 250px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+
 article {
     display: inline-block;
     width: 30%;
     padding: 50px;
+    
+}
+
+.assets article {
+    margin-left: 50px;
 }
 
 article .report-icon{
@@ -232,6 +282,8 @@ article p {
 
 }
 .btn-lm {
+    display: inline-block;
+    width: 30%;
     margin: 150px;
     background-color: #FFF;
     color: #000;
@@ -240,7 +292,7 @@ article p {
     border-radius: 20px;
     text-decoration: none;
     text-transform: uppercase;
-    
+
 }
 
 .assets p {
@@ -250,32 +302,39 @@ article p {
 }
 
 form .input-a {
-    width:550px;
+    width:535px;
     height: 20px;
     margin: 10px;
     border-radius: 4px;
     padding: 10px, 12px;
+    margin-left: 50px;
+
 
 }
 
 form select {
-    width: 80%;
+    width: 87%;
     height: 20px;
     margin: 10px;
     border-radius: 4px;
     padding: 10px, 12px;
+    margin-left: 50px;
+
+
 }
 
 form textarea {
-    width: 80%;
+    width: 87%;
     height: 210px;
     margin: 10px;
+    margin-left: 50px;
     border-radius: 4px;
 
 }
 
 form .btn-section {
     padding: 5px;
+    margin-left: 50px;
 }
 .btn-green {
     background-color: #AACE9B;
@@ -290,7 +349,7 @@ form .btn-section {
 }
 
  .btn-white {
-    margin-left: 20px; 
+    margin-left: 20px;
     background-color: #FFF;
     color: #000;
     padding: 8px 30px 8px 30px;
@@ -314,10 +373,15 @@ form .btn-section {
     line-height: 1.8;
 }
 
+.order-section {
+
+}
+
 .order-list {
+    padding-top: 100px;
+    padding-bottom: 100px;
     display: inline-block;
     width: 33%;
-    padding-bottom: ;
     text-align: center;
 }
 
@@ -358,17 +422,19 @@ footer {
 footer .foot {
     display: inline-block;
     padding: 150px;
-    padding-top: 250;
-    margin-left: 450px;
-
+    margin-left: 250px;
 }
 
 footer .foot a {
     padding-right: 80px;
+
 }
 
 footer .foot p {
     text-align: center;
     color: #ededed;
     font-size: 30px;
+    width: 710px;
+
 }
+
