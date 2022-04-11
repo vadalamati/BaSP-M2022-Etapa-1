@@ -10,12 +10,13 @@ nav ul a {
     text-decoration: none;
     color: #000;
 }
+/*aside*/
 aside {
     flex: 1;
     height: 100%;
     background-color: #ededed;
 }
-.topnav {
+.search-container {
     background-color: #c4c4c4;
 }
 .right-content {
@@ -25,7 +26,7 @@ input {
     border-radius: 5px;
     border-style: none;
 }
-p.menu , .git {
+p.menu , .get-in {
     margin-top: 1rem;
     margin-left: 1rem;
     font-family: 'Roboto', sans-serif;
@@ -33,6 +34,7 @@ p.menu , .git {
     font-weight: 500;
     text-decoration: underline #aace9b;
 }
+/*list*/
 li {
     text-decoration: none;
 }
@@ -40,17 +42,20 @@ a {
     text-decoration: none;
     color: #000;
 }
+/*h styles*/
 h2 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 4rem;
+    padding: 1.5rem;
 }
 h3 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 1.5rem;
+    padding: 1.5rem;
 }
 .functions p {
     font-family: 'Roboto';
