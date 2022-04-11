@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.05em;
+    color: #000;
+}
+nav ul a {
+    font-weight: 400;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000;
+}
+aside {
+    flex: 1;
+    height: 100%;
+    background-color: #ededed;
+}
+.topnav {
+    background-color: #c4c4c4;
+}
+.right-content {
+    flex: 4;
+}
+input {
+    border-radius: 5px;
+    border-style: none;
+}
+p.menu , .git {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-decoration: underline #aace9b;
+}
+li {
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4rem;
+}
+h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.functions p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 24px;
+}
