@@ -9,6 +9,9 @@ aside {
         display: flex;
         flex-direction: column;
     }
+    input {
+        border-style: none;
+    }
     /*aside form*/
     form.search-container {
         display: flex;
