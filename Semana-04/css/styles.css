@@ -1,68 +1,42 @@
 body {
     display: flex;
-    font-family: 'Roboto', sans-serif;
+    width: 100%;
     letter-spacing: 0.05em;
-    color: #000;
-}
-nav ul a {
-    font-weight: 400;
-    font-size: 1rem;
-    text-decoration: none;
-    color: #000;
-}
-/*aside*/
-aside {
-    flex: 1;
-    height: 100%;
-    background-color: #ededed;
-}
-.search-container {
-    background-color: #c4c4c4;
-}
-.right-content {
-    flex: 4;
-}
-input {
-    border-radius: 5px;
-}
-p.menu , .get-in {
-    margin-top: 1rem;
-    margin-left: 1rem;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.7rem;
-    font-weight: 500;
-    text-decoration: underline #aace9b;
-}
-/*list*/
-li {
-    text-decoration: none;
-}
-a {
-    text-decoration: none;
-    color: #000;
-}
-/*h styles*/
-h2 {
     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 4rem;
-    padding: 1.5rem;
-    text-align: center;
 }
-h3 {
-    font-family: 'Roboto';
-    font-style: normal;
+.side-bar {
+    background-color: #EDEDED;
+}
+header {
+    background-color: #AACE9B;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+.main-sec{
+    margin: auto;
+    width: 90%;
+}
+.main-container, .about-us, .assets, .form-container, .main-func, .order-section{
+    margin: 2rem 0;
+}
+.main-container, .main-func, .assets, .form-container, .about-us, .order-section{
+    border-bottom: 2px solid #c4c4c4;
+}
+h2{
+    padding-bottom: 3px;
+    text-decoration: underline #AACE9B;
     font-weight: 500;
     font-size: 1.5rem;
-    padding: 1.5rem;
 }
-.functions p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 1rem;
-    line-height: 24px;
+.main-background, .about-container img, .asset-container img{
+    max-width: max-content;
+    width: 100%;
+    height: auto;
+}
+button{
+    text-transform: uppercase;
 }
 /*btn-styles*/
 .btn-green {
