@@ -4,7 +4,7 @@ footer{
     justify-content: center;
     align-items: center;
     height: 270px;
-    background-image: url(../assets/png/footer-background);
+    background-image: url(../assets/png/footer.png);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,6 +15,11 @@ footer{
     align-items: center;
     width: 80%;
     margin-top: 4rem;
+}
+.foot-icons a:hover{
+    border-radius: 1.5rem;
+    padding:0.5rem;
+    background-color: #999
 }
 .foot-text{
     margin-top: 1rem;

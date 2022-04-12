@@ -5,6 +5,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex: 8;
 }
 .main-text{
     display: flex;
@@ -45,6 +46,9 @@
     height: auto;
     border-radius: 0;
 }
+.main-background img {
+    width: 650px;
+}
 /*function section*/
 .functions-container{
     display: flex;
@@ -81,6 +85,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding-bottom: 3.5rem;
 }
 .assets-container .flex-assets{
     display: flex;
@@ -103,15 +108,10 @@
     margin: 1rem 0;
     padding: 1rem;
 }
-.assets-container button{
-    padding: 0.4rem 1.2rem;
-    border-radius: 0.8rem;
-    margin-bottom: 1rem;
-    color: #000;
-    border: none;
-    background-color: #AACE9B;
+.assets-container .btn-green{
+    padding: 0.8rem 1.4rem;
 }
-.assets-container button:hover{
+.assets-container a:hover{
     background-color: #809B75;
 }
 /*form section*/
@@ -137,7 +137,7 @@
 .btn-section{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    
     align-items: center;
     height: 6rem;
     margin-bottom: 2rem;
@@ -148,6 +148,7 @@
     background-color: #AACE9B;
     border-radius: 8px;
     border: 0rem solid #AACE9B;
+
 }
 .btn-section .btn-green:hover{
     background-color: #809B75;
@@ -214,6 +215,10 @@
 }
 /*media for tablet*/
 @media (min-width: 768px) {
+    .main-container {
+        flex-direction: row;
+        flex-wrap:nowrap
+    }
     .main-sec{
         flex-direction: row;
         flex-wrap: nowrap;
