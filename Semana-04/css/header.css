@@ -1,35 +1,31 @@
-.header-container{
+.header-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 3rem;
+    min-height: 3rem;
+    background-color: #aace9b;
 }
-.header-container img{
-    height: 20px;
-    padding-left: 0.4rem;
+.header-container span {
+    margin-left: 1rem;
 }
-.header-container h1{
-    font-family: Righteous;
-    font-size: 2rem;
-    text-transform: uppercase;
-    flex: 2;
-}
-nav{
-    flex: 3;
-}
-.header-container nav ul{
-    display: flex;
-    justify-content: space-evenly;
-    flex: 1;;
-}
-.header-container a{
+.header-container h1 {
+    font-family: 'Righteous' , 'Roboto' , 'arial';
+    font-weight: 400;
+    font-size: 3rem;
     text-transform: uppercase;
 }
-.header-container a:hover{
-    color: #666;
+.header-container nav ul {
+    display: none;
 }
-@media (min-width: 1024px) {
-    .header-container nav{
-        display: none;
+/*media header for tablet*/
+@media screen and (min-width: 768px) {
+    .header-container nav {
+        flex-basis: 400px;
+    }
+    .header-container nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 }
