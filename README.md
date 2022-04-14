@@ -29,9 +29,22 @@ footer: whit location info, Copyright and social media icons
 
 In this problemactic will be given styles at the html. For this moment style sheet not available ('cause Matías don't do it anything)
 
-## Week-4       
+## Week-4
 
 ### What about this week?
 
 In this problemactic will be given styles whit flexbox. 
 In addition, footer, sidebar, header and main style sheets are added.
+
+## Week-5
+
+### What about this week?
+
+In this wheek we do a serie of exercises in javaScrip whit ECMAScript5 standart. The topics to work are:
+
+- variables and operators
+- strings
+- arrays
+- if / else
+- for
+- functons
