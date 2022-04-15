@@ -1,53 +1,45 @@
-// 3 Arrays
+//If Else
+console.log ('4 IF/ELSE');
+/* 4-a Crear un número aleatorio entre 0 y 1 utilizando la función Math.random(), 
+si el valor es mayor o igual que 0,5 mostrar una alerta con el mensaje “Greater than 0,5” 
+y sino un alerta con el mensaje “Lower than 0,5”.*/
+console.log ('Exercise 4-a');
 
-var array = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto",
-"Septiembre", "Octubre", "Noviembre", "Diciembre"];
+var randorNumber = Math.random();
+    if (randorNumber >=0.5){
+        alert ('Greater than 0,5');
+    }
+        else {
+            alert ('Lower than 0,5');
+        }
 
-/* 3-a Dado el siguiente array: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto",
-"Septiembre", "Octubre", "Noviembre", "Diciembre"] mostrar por consola los meses 5 y 11 (utilizar console.log).*/
-console.log ('Exercise 3-a')
-console.log (array[5],array[11]);
+    console.log (randorNumber);
 
+/* 4-b Crear una variable “Age” que contenga un número entero entre 0 y 100
+y muestre los siguientes mensajes de alerta:
+“Bebe” si la edad es menor a 2 años;
+“Niño” si la edad es entre 2 y 12 años;
+“Adolescente” entre 13 y 19 años;
+“Joven” entre 20 y 30 años;
+“Adulto” entre 31 y 60 años;
+“Adulto mayor” entre 61 y 75 años;
+“Anciano” si es mayor a 75 años.*/
+console.log ('Exercise 4-b');
 
-// 3-b Ordenar el array de meses alfabéticamente y mostrarlo por consola (utilizar sort).
-console.log ('Exercise 3-b');
-console.log (array.sort());
-
-// 3-c Agregar un elemento al principio y al final del array (utilizar unshift y push).
-console.log ('Exercise 3-c');
-
-var finalArray = array.push('final');
-var beginArray = array.unshift('begin');
-
-console.log (array);
-
-// 3-d Quitar un elemento del principio y del final del array (utilizar shift y pop).
-console.log ('Exercise 3-d');
-
-var byeBegin = array.shift();
-var byeFinal = array.pop();
-
-console.log (array);
-
-// 3-e  Invertir el orden del array (utilizar reverse).
-console.log ('Exercise 3-e');
-
-var reverseArray = array.reverse();
-
-console.log (reverseArray);
-
-//3-f Unir todos los elementos del array en un único string donde cada mes este separado por un guión - (utilizar join).
-console.log ('Exercise 3-f');
-
-var stringArray = array.join('-');
-
-console.log (stringArray);
-//3-g  Crear una copia del array de meses que contenga desde Mayo hasta Noviembre (utilizar slice)
-console.log ('Exercise 3-g');
-
-array = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto",
-"Septiembre", "Octubre", "Noviembre", "Diciembre"];
-
-var minArray = array.slice(4,11);
-
-console.log (minArray);
+var age = Math.round(Math.random()*101);
+console.log ('La edad es de:' + age);
+    if (age < 2) {
+        alert('Bebe');
+    }       else if (2 <= age && age <= 12) {
+                alert('Niño');
+    }           else if (13 <= age && age <= 19) {
+                    alert('Adolescente');
+    }               else if (20 <= age && age <= 30) {
+                        alert('Joven');
+    }                   else if (31 <= age && age <= 60) {
+                            alert('Adulto');
+    }                       else if (61 <= age && age <= 75) {
+                                alert('Adulto mayor');
+    }                           else {
+                                    alert('Anciano');
+    }
