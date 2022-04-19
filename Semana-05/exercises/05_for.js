@@ -2,7 +2,7 @@
  for de JavaScript para mostrar una alerta utilizando cada una de las palabras*/
  console.log ('Excercise 5-a');
 
-var animals = new Array ['cats', 'dogs', 'ducks', 'horses', 'pigs'];
+var animals = ['cats', 'dogs', 'ducks', 'horses', 'pigs'];
 for ( i = 0; i < animals.length; i++) {
     alert(animals[i]);
 };

@@ -1,7 +1,6 @@
 /*main section*/
 .main-container{
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -99,6 +98,9 @@
 .assets-container img{
     margin-top: 2rem;
     border-radius: 1rem;
+    width: 100%;
+    height: auto;
+    max-width:max-content;
 }
 .assets-container h3{
     margin: 0.6rem 0;
@@ -116,6 +118,9 @@
 }
 .assets-container a:hover{
     background-color: #809B75;
+}
+.asset-item .btn-green{ 
+    text-align: center;
 }
 /*form section*/
 .form-container form{

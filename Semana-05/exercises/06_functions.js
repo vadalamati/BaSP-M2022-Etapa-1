@@ -51,7 +51,6 @@ console.log (validateInteger(7));
 En caso que haya decimales mostrar un alerta con el error y retorna el número convertido a entero (redondeado).*/
 console.log('Exercise 6-d')
 
-
 function sumaC(x, y){
     if (typeof x === 'number' && typeof y === 'number') {
         isIntX = Number.isInteger(x);
@@ -76,8 +75,6 @@ function sumaC(x, y){
 }
 
 console.log (sumaC(6.9,10));
-
-
 
 /*Convertir la validación del ejercicio 6d) en una función separada y llamarla
 dentro de la función suma probando que todo siga funcionando igual.*/
@@ -111,3 +108,4 @@ function validateIntegerSumaE(x, y){
         return false;
     }
 }
+console.log (sumaE(9.2, 7));
