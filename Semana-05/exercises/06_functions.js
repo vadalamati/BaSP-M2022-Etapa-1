@@ -108,4 +108,4 @@ function validateIntegerSumaE(x, y){
         return false;
     }
 }
-console.log (sumaE(9.2, 7));
+console.log (sumaE(5,7,2));
