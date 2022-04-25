@@ -88,5 +88,3 @@ form[1].onsubmit = function (e) {
         hideAlert[1].classList.add('error');
     }
 };
-
-
