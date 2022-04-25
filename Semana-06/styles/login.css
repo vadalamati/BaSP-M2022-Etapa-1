@@ -1,0 +1,106 @@
+body{
+    background-color: #AACE9B;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    background-image: url(../assets/back-login.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#login{
+    font-weight: bolder;
+}
+.flex-login{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 1rem;
+    width: 50%;
+    border: .2px solid #000;
+    background-color: #F6F9F4;
+    border-radius: 20px;
+}
+h2{
+    font-family: Righteous;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+    word-break: break-all;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    margin: 1.4rem 0;
+}
+.login-form input{
+    padding: 5px;
+    margin-top: .4rem;
+    border-radius: 5px;
+}
+.login-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-buttons button{
+    margin: .8rem 0;
+    width: 50%;
+    min-width: 100px;
+    cursor: pointer;
+}
+.btn-log{
+    padding: 0.4rem 1.2rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    color: #000;
+    border: none;
+    background-color: #AACE9B;
+}
+.btn-log:hover{
+    background-color: #809B75;
+}
+.btn-sign{
+    padding: 0.4rem 1.2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    border: none;
+    outline: 0.1rem solid #AACE9B;
+}
+.btn-sign:hover{
+    background-color: #F0F0F0;
+}
+.forgot{
+    font-size: .8rem;
+}
+.forgot:hover{
+    font-weight: 700;
+}
+.error-text{
+    color: #DC143C	;
+    visibility: hidden;
+}
+.error{
+    visibility: visible;
+}
+.blur{
+    border: 2px solid #DC143C;
+}
+.correct{
+    border: 2px solid #1ecc61;
+}
+.hidden-cartel{
+    display: none;
+}
+footer{
+    background: none;
+    height: auto;
+}
