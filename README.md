@@ -48,3 +48,11 @@ In this wheek we do a serie of exercises in javaScrip whit ECMAScript5 standart.
 - if / else
 - for
 - functons
+
+## Week-6
+
+### What about this week?
+
+In this wheek we goin to aplicate js logic in some forms on html. The pages to work are:
+- Sing up
+- Login
