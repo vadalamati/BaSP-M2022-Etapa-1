@@ -48,7 +48,6 @@ function myBlur(x, i) {
     }
 }
 
-
 mail.onfocus = function () {
     myFocus(mail, 0);
 };
@@ -65,9 +64,7 @@ pass.onblur = function () {
 form[1].onsubmit = function (e) {
     e.preventDefault();
     if (mailValidator(mail) == true && passValidator(pass) == true) {
-        validateForm[0].classList.remove('hidden-cartel');
-        validateValue[0].innerHTML = mail.value;
-        validateValue[1].innerHTML = pass.value;
+        window.alert(`Datos de validación` + `\n Email: ${mail.value}` + `\n Contraseña: ${pass.value}`);  
     } else if (mailValidator(mail) == false && passValidator(pass) == true) {
         alert('El email ingresado no posee un formato válido');
         mail.classList.add('blur');
