@@ -68,15 +68,15 @@ h2{
     display: none;
 }
 .error-text{
-    color: #DC143C;
+    color: #f00;
     visibility: hidden;
 }
 .error{
     visibility: visible;
 }
 .blur{
-    border: 2px solid #DC143C;
+    border: 2px solid #f00;
 }
 .correct{
-    border: 2px solid #1ecc61;
+    border: 2px solid #3BBA6C;
 }
