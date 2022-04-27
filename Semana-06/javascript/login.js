@@ -2,9 +2,6 @@ var mail = document.getElementById('email');
 var pass = document.getElementById('pass');
 var hideAlert = document.getElementsByClassName('error-text');
 var form = document.getElementsByTagName('form');
-var validateValue = document.getElementsByClassName('inner-span');
-var validateForm = document.getElementsByClassName('hidden-cartel');
-var resetButton = document.getElementById('btn-reset');
 
 function mailValidator(x) {
     var regexMail = /[a-z0-9]+@[a-z]+.[a-z]{2,3}/;

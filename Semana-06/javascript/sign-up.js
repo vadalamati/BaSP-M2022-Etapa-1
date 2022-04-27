@@ -84,34 +84,29 @@ repass.onblur = function () {
 form[1].onsubmit = function (e) {
     e.preventDefault();
     if (
-        validateLetters(nombre, 3) == true &&
-        validateLetters(apellido, 3) == true &&
-        validateNumbers(doc, 7) == true &&
-        validateTel(telefono, 10) == true &&
-        validateDir(dir, 5) == true &&
-        validateAdress(adress, 3) == true &&
-        validateCp(cp) == true &&
-        validateMail(email) == true &&
-        validatePass(pass, 8) == true &&
-        validateRePass(pass, repass) == true
+        validateLetters(nombre, 3) &&
+        validateLetters(apellido, 3) &&
+        validateNumbers(doc, 7) &&
+        validateTel(telefono, 10)&&
+        isAdult(fecNac)&&
+        formDate(fecNac)&&
+        validateDate(fecNac)&&
+        validateDir(dir, 5)&&
+        validateAdress(adress, 3)&&
+        validateCp(cp)&&
+        validateMail(email)&&
+        validatePass(pass, 8)&&
+        validateRePass(pass, repass) 
     ) {
-        validateForm[0].classList.remove('hide-cartel');
-        validateValue[0].innerHTML = nombre.value;
-        validateValue[1].innerHTML = apellido.value;
-        validateValue[2].innerHTML = doc.value;
-        validateValue[3].innerHTML = fecNac.value;
-        validateValue[4].innerHTML = telefono.value;
-        validateValue[5].innerHTML = dir.value;
-        validateValue[6].innerHTML = adress.value;
-        validateValue[7].innerHTML = cp.value;
-        validateValue[8].innerHTML = email.value;
-        validateValue[9].innerHTML = pass.value;
-        validateValue[10].innerHTML = repass.value;
-    } else {
-        alert('Revise los datos ingresador por favor');
+        alert(`Nombre: ${nombre.value}` + `\nApellido: ${apellido.value} ` +
+        `\nDni: ${doc.value}` + `\nTel:${telefono.value}` + `\nDir: ${dir.value}` +
+        `\nLocalidad: ${adress.value}` + `Fecha de Nacimiento: ${fecNac.value}`
+        `\nCp: ${cp.value}` + `\nMail: ${email.value}` + `\nPass: ${pass.value}` )
     }
-};
-
+    else {
+        alert('Revise los campos')
+    }       
+}
 function myFocus(x, i) {
     x.classList.remove('blur');
     hideAlert[i].classList.remove('error');
@@ -307,17 +302,17 @@ function validateAdress(x, valor) {
     var minValue = x.value.toLowerCase();
     var num = 0;
     var char = 0;
-    var special = false;
+    var specialChar = false;
     for (i = 0; i < x.value.length; i++) {
         if (numbers.includes(x.value[i])) {
             num++;
         } else if (alph.includes(minValue[i])) {
             char++;
         } else {
-            special = true;
+            specialChar = true;
         }
     }
-    if (x.value.length >= valor && num >= 1 && char >= 3) {
+    if (x.value.length >= valor && num >= 0 && char >= 3) {
         return true;
     } else {
         return false;
@@ -330,4 +325,30 @@ function validateRePass(x, y) {
     } else {
         return false;
     }
+}
+
+function isAdult (date){
+    
+    var date = new Date(date.value);
+    var currentDate = new Date(Date.now());
+
+    return new Date(currentDate - date).getFullYear() - 1970 >= 18;
+}
+
+function formDate(dateToForm) {
+
+    var [year, month, day] = dateToForm.value.split("-");
+    var formattedDate = `${day}/${month}/${year}`;
+    
+    return  formattedDate;
+}
+
+function validateDate(dateToValidate){
+
+    var [year, month, day] = dateToValidate.value.split("-");
+    var isoFormattedStr = `${year}/${month}/${day}`;
+    var date = new Date(isoFormattedStr);
+    var currentDate = new Date(Date.now());
+
+    return currentDate >= date
 }
