@@ -2,6 +2,9 @@ var mail = document.getElementById('email');
 var pass = document.getElementById('pass');
 var hideAlert = document.getElementsByClassName('error-text');
 var form = document.getElementsByTagName('form');
+var logButton = document.getElementById('button-log');
+
+//functions
 
 function mailValidator(x) {
     var regexMail = /[a-z0-9]+@[a-z]+.[a-z]{2,3}/;
@@ -30,7 +33,6 @@ function passValidator(x) {
     }
 }
 
-
 function myFocus(x, i) {
     x.classList.remove('blur');
     hideAlert[i].classList.remove('error');
@@ -45,6 +47,37 @@ function myBlur(x, i) {
     }
 }
 
+function loginRequest (eValue, pValue, url) {
+    fetch(url + '?email=' + eValue + '&password=' +pValue, {
+        params: {
+            email: eValue,
+            password: pValue,
+        }
+    })
+        .then(function (response){
+            return response.json();
+        })
+        .then(function(jsonReponse){
+            alert(jsonReponse.msg);
+            if(jsonReponse.success) {
+                window.alert(`Validation Data: ` +
+                `\n Email: ${mail.value}`+
+                `\n Password: ${pass.value}`);
+            } else {
+                mail.classList.add('blur');
+                mail.classList.remove('correct');
+                hideAlert[0].classList.add('error');
+                pass.classList.add('blur');
+                pass.classList.remove('correct');
+                hideAlert[1].classList.add('error');
+            }
+        })
+        .catch(function (error){
+            console.log ('Error: ', error);
+        })
+}
+
+//events
 mail.onfocus = function () {
     myFocus(mail, 0);
 };
@@ -59,21 +92,12 @@ pass.onblur = function () {
 };
 
 form[1].onsubmit = function (e) {
+    var url = 'https://basp-m2022-api-rest-server.herokuapp.com/login';
     e.preventDefault();
-    if (mailValidator(mail) == true && passValidator(pass) == true) {
-        window.alert(`Datos de validación` + `\n Email: ${mail.value}` + `\n Contraseña: ${pass.value}`);  
-    } else if (mailValidator(mail) == false && passValidator(pass) == true) {
-        alert('El email ingresado no posee un formato válido');
-        mail.classList.add('blur');
-        mail.classList.remove('correct');
-        hideAlert[0].classList.add('error');
-    } else if (mailValidator(mail) == true && passValidator(pass) == false) {
-        alert('La contraseña ingresada no posee un formato válido');
-        pass.classList.add('blur');
-        pass.classList.remove('correct');
-        hideAlert[1].classList.add('error');
-    } else {
-        alert('Los datos ingresados no poseen un formato válido');
+    if (mailValidator(mail) && passValidator(pass)){
+        loginRequest(mail.value, pass.value, url);
+    } else { 
+        alert('Incorrect username or password.');
         mail.classList.add('blur');
         mail.classList.remove('correct');
         hideAlert[0].classList.add('error');

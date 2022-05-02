@@ -53,6 +53,13 @@ In this wheek we do a serie of exercises in javaScrip whit ECMAScript5 standart.
 
 ### What about this week?
 
-In this wheek we goin to aplicate js logic in some forms on html. The pages to work are:
+In this wheek we going to aplicate js logic in some forms on html. The pages to work are:
 - Sing up
 - Login
+
+## Week-7
+
+### What about this week?
+
+In this week we work whit callbacks and promises in login and singup pages.
+
