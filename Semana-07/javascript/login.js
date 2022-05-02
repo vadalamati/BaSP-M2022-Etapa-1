@@ -4,8 +4,6 @@ var hideAlert = document.getElementsByClassName('error-text');
 var form = document.getElementsByTagName('form');
 var logButton = document.getElementById('button-log');
 
-//functions
-
 function mailValidator(x) {
     var regexMail = /[a-z0-9]+@[a-z]+.[a-z]{2,3}/;
     if (regexMail.test(x.value)) {     
@@ -63,6 +61,8 @@ function loginRequest (eValue, pValue, url) {
                 window.alert(`Validation Data: ` +
                 `\n Email: ${mail.value}`+
                 `\n Password: ${pass.value}`);
+                localStorage.setItem('email', `${mail.value}`);
+                localStorage.setItem('password', `${pass.value}`);
             } else {
                 mail.classList.add('blur');
                 mail.classList.remove('correct');
@@ -77,7 +77,6 @@ function loginRequest (eValue, pValue, url) {
         })
 }
 
-//events
 mail.onfocus = function () {
     myFocus(mail, 0);
 };
@@ -106,3 +105,4 @@ form[1].onsubmit = function (e) {
         hideAlert[1].classList.add('error');
     }
 };
+
