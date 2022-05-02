@@ -56,10 +56,21 @@ In this wheek we do a serie of exercises in javaScrip whit ECMAScript5 standart.
 In this wheek we going to aplicate js logic in some forms on html. The pages to work are:
 - Sing up
 - Login
+You can check this forms in this link:
+
+[Click here for check Login](https://vadalamati.github.io/BaSP-M2022-Etapa-1/Semana-07/views/login.html)
+
+[Click here for check Singup](https://vadalamati.github.io/BaSP-M2022-Etapa-1/Semana-07/views/sign-up.html)
 
 ## Week-7
 
 ### What about this week?
 
-In this week we work whit callbacks and promises in login and singup pages.
+In this week we'll be work whit callbacks, promises (using 'fetch' function), validations on the server and storage in Local Storage. If these validation correspond whit api data, will be saved in local storage.
+
+You can check this forms in this link:
+
+- [Click here for check Login](https://vadalamati.github.io/BaSP-M2022-Etapa-1/Semana-07/views/login.html)
+
+- [Click here for check Singup](https://vadalamati.github.io/BaSP-M2022-Etapa-1/Semana-07/views/sign-up.html)
 
