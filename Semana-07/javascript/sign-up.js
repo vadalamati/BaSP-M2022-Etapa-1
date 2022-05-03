@@ -1,8 +1,33 @@
-var nombre = document.getElementById('name-sign');
-var apellido = document.getElementById('surName-sign');
+window.onload = function (){
+    if (
+        localStorage.getItem('name') != null &&
+        localStorage.getItem('surname') != null &&
+        localStorage.getItem('dni') != null &&
+        localStorage.getItem('date of birth') != null &&
+        localStorage.getItem('phone number') != null &&
+        localStorage.getItem('address') != null &&
+        localStorage.getItem('city') != null &&
+        localStorage.getItem('zip') != null &&
+        localStorage.getItem('email') != null &&
+        localStorage.setItem('password', pass.value)
+    ) {
+        fName.value = localStorage.getItem('name');
+        surname.value = localStorage.getItem('lastName');
+        doc.value = localStorage.getItem('dni');
+        date.value = localStorage.getItem('date');
+        phoneNumber.value = localStorage.getItem('phone');
+        dir.value = localStorage.getItem('address');
+        adress.value = localStorage.getItem('city');
+        cp.value = localStorage.getItem('zip');
+        email.value = localStorage.getItem('email')
+    }  
+}
+
+var fName = document.getElementById('name-sign');
+var surname = document.getElementById('surName-sign');
 var doc = document.getElementById('dni');
-var fecNac = document.getElementById('fdn-sign');
-var telefono = document.getElementById('tel-sign');
+var date = document.getElementById('fdn-sign');
+var phoneNumber = document.getElementById('tel-sign');
 var dir = document.getElementById('dir-sign');
 var adress = document.getElementById('location-sign');
 var cp = document.getElementById('cp-sign');
@@ -13,100 +38,7 @@ var hideAlert = document.getElementsByClassName('error-text');
 var validateValue = document.getElementsByClassName('inner-span');
 var validateForm = document.getElementsByClassName('hide-cartel');
 var form = document.getElementsByTagName('form');
-var closeModal = document.getElementById('close-modal');
 
-nombre.onfocus = function () {
-    myFocus(nombre, 0);
-};
-nombre.onblur = function () {
-    myBlur(nombre, 0);
-};
-apellido.onfocus = function () {
-    myFocus(apellido, 1);
-};
-apellido.onblur = function () {
-    myBlur(apellido, 1);
-};
-doc.onfocus = function () {
-    myFocus(doc, 2);
-};
-doc.onblur = function () {
-    myBlur(doc, 2);
-};
-fecNac.onfocus = function () {
-    myFocus(fecNac, 3);
-};
-fecNac.onblur = function () {
-    myBlur(fecNac, 3);
-};
-telefono.onfocus = function () {
-    myFocus(telefono, 4);
-};
-telefono.onblur = function () {
-    myBlur(telefono, 4);
-};
-dir.onfocus = function () {
-    myFocus(dir, 5);
-};
-dir.onblur = function () {
-    myBlur(dir, 5);
-};
-adress.onfocus = function () {
-    myFocus(adress, 6);
-};
-adress.onblur = function () {
-    myBlur(adress, 6);
-};
-cp.onfocus = function () {
-    myFocus(cp, 7);
-};
-cp.onblur = function () {
-    myBlur(cp, 7);
-};
-email.onfocus = function () {
-    myFocus(email, 8);
-};
-email.onblur = function () {
-    myBlur(email, 8);
-};
-pass.onfocus = function () {
-    myFocus(pass, 9);
-};
-pass.onblur = function () {
-    myBlur(pass, 9);
-};
-repass.onfocus = function () {
-    myFocus(repass, 10);
-};
-repass.onblur = function () {
-    myBlur(repass, 10);
-};
-form[1].onsubmit = function (e) {
-    e.preventDefault();
-    if (
-        validateLetters(nombre, 3) &&
-        validateLetters(apellido, 3) &&
-        validateNumbers(doc, 7) &&
-        validateTel(telefono, 10)&&
-        isAdult(fecNac)&&
-        formDate(fecNac)&&
-        validateDate(fecNac)&&
-        validateDir(dir, 5)&&
-        validateAdress(adress, 3)&&
-        validateCp(cp)&&
-        validateMail(email)&&
-        validatePass(pass, 8)&&
-        validateRePass(pass, repass) 
-    ) {
-        alert(`Nombre: ${nombre.value}` + `\nApellido: ${apellido.value} ` +
-        `\nDni: ${doc.value}` + `\nTel:${telefono.value}` + `\nDir: ${dir.value}` +
-        `\nLocalidad: ${adress.value}` + `Fecha de Nacimiento: ${fecNac.value}`
-        `\nCp: ${cp.value}` + `\nMail: ${email.value}` + `\nPass: ${pass.value}` )
-    }
-    else {
-        alert('Revise los campos')
-    }       
-}
 function myFocus(x, i) {
     x.classList.remove('blur');
     hideAlert[i].classList.remove('error');
@@ -351,4 +283,180 @@ function validateDate(dateToValidate){
     var currentDate = new Date(Date.now());
 
     return currentDate >= date
+}
+
+function signUp (
+    fNameValue,
+    surnameValue,
+    docValue,
+    dateValue,
+    phoneNumberValue,
+    addressValue,
+    dirValue,
+    cpValue,
+    emailValue,
+    passValue,
+    url
+) {
+    fetch(
+        url +
+        '?name=' +
+        fNameValue +
+        '&lastName=' +
+        surnameValue +
+        '&dni=' +
+        docValue +
+        '&dob=' +
+        dateValue +
+        '&phone=' +
+        phoneNumberValue +
+        '&address=' +
+        addressValue +
+        '&city=' +
+        dirValue +
+        '&zip=' +
+        cpValue +
+        '&email=' +
+        emailValue +
+        '&password=' +
+        passValue
+    )
+        .then (function (response){
+            return response.json();
+        })
+        .then(function (jsonReponse){
+            alert(jsonReponse.msg);
+            if (jsonReponse.success) {
+                dataStorage();
+                window.alert
+                (`name: ${fName.value}` + `\nsurname: ${surname.value} ` +
+                `\nDni: ${doc.value}` + `\nPhone Number:${phoneNumber.value}` + `\nDir: ${dir.value}` +
+                `\nCity: ${adress.value}` + `Fecha de Nacimiento: ${date.value}`
+                `\nCp: ${cp.value}` + `\nMail: ${email.value}` + `\nPass: ${pass.value}` );
+            } else {
+                alert('Revise los campos');
+            }
+        })
+        .catch(function(error){
+            console.log ('Error: ', error);
+        });
+}
+
+
+function dataStorage(){
+    localStorage.setItem('name', fName.value);
+    localStorage.setItem('surname', surname.value);
+    localStorage.setItem('dni', doc.value);
+    localStorage.setItem('date of birth', date.value);
+    localStorage.setItem('phone number', phoneNumber.value);
+    localStorage.setItem('address', dir.value);
+    localStorage.setItem('city', adress.value);
+    localStorage.setItem('zip', cp.value);
+    localStorage.setItem('email', email.value);
+    localStorage.setItem('password', pass.value);
+    
+}
+
+// event
+fName.onfocus = function () {
+    myFocus(fName, 0);
+};
+fName.onblur = function () {
+    myBlur(fName, 0);
+};
+surname.onfocus = function () {
+    myFocus(surname, 1);
+};
+surname.onblur = function () {
+    myBlur(surname, 1);
+};
+doc.onfocus = function () {
+    myFocus(doc, 2);
+};
+doc.onblur = function () {
+    myBlur(doc, 2);
+};
+date.onfocus = function () {
+    myFocus(date, 3);
+};
+date.onblur = function () {
+    myBlur(date, 3);
+};
+phoneNumber.onfocus = function () {
+    myFocus(phoneNumber, 4);
+};
+phoneNumber.onblur = function () {
+    myBlur(phoneNumber, 4);
+};
+dir.onfocus = function () {
+    myFocus(dir, 5);
+};
+dir.onblur = function () {
+    myBlur(dir, 5);
+};
+adress.onfocus = function () {
+    myFocus(adress, 6);
+};
+adress.onblur = function () {
+    myBlur(adress, 6);
+};
+cp.onfocus = function () {
+    myFocus(cp, 7);
+};
+cp.onblur = function () {
+    myBlur(cp, 7);
+};
+email.onfocus = function () {
+    myFocus(email, 8);
+};
+email.onblur = function () {
+    myBlur(email, 8);
+};
+pass.onfocus = function () {
+    myFocus(pass, 9);
+};
+pass.onblur = function () {
+    myBlur(pass, 9);
+};
+repass.onfocus = function () {
+    myFocus(repass, 10);
+};
+repass.onblur = function () {
+    myBlur(repass, 10);
+};
+form[1].onsubmit = function (e) {
+    e.preventDefault();
+    var url = 'https://basp-m2022-api-rest-server.herokuapp.com/signup';
+    if (
+        validateLetters(fName, 3) &&
+        validateLetters(surname, 3) &&
+        validateNumbers(doc, 7) &&
+        validateTel(phoneNumber, 10)&&
+        isAdult(date)&&
+        formDate(date)&&
+        validateDate(date)&&
+        validateDir(dir, 5)&&
+        validateAdress(adress, 3)&&
+        validateCp(cp)&&
+        validateMail(email)&&
+        validatePass(pass, 8)&&
+        validateRePass(pass, repass) 
+    ) {
+        signUp (  
+            fName.value,
+            surname.value,
+            doc.value,
+            phoneNumber.value,
+            date.value,
+            dir.value,
+            adress.value,
+            cp.value,
+            email.value,
+            pass.value,
+            url
+        );
+    }
+    else {
+        alert('Revise los campos')
+    }       
 }
